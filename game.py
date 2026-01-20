@@ -3,7 +3,6 @@ import pyautogui
 import mediapipe as mp
 import time
 pyautogui.FAILSAFE=True
-#opencv and mediapipe
 cap=cv2.VideoCapture(0)
 mphands=mp.solutions.hands
 hands=mphands.Hands(max_num_hands=1)
@@ -54,5 +53,6 @@ while True:
        break
 cap.release()
 cv2.destroyAllWindows()    
+
 
 
